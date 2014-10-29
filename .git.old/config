@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+	hideDotFiles = dotGitOnly
+[gui]
+	wmstate = iconic
+	geometry = 887x427+25+25 171 192
+[remote "origin"]
+	url = austingayler@github.com
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "pythia"]
+	url = git@github.com:austingayler/pythia.git
+	fetch = +refs/heads/*:refs/remotes/pythia/*
