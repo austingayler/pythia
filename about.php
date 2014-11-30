@@ -78,7 +78,8 @@
                 <h1>About</h1>
                 <p>
 				<?php 
-				exec("sudo python /scripts/system-stats.py");
+				$out = shell_exec(escapeshellcmd('sudo python /scripts/system-stats.py'));
+				echo $out;
 				echo "<br />"
 				phpinfo()
 				?>
