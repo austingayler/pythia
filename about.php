@@ -75,8 +75,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1>CHOOSE SOMETHING YOU WANT TO DO</h1>
-                <p></p>
+                <h1>About</h1>
+                <p>
+				<?php 
+				exec("sudo python /scripts/system-stats.py");
+				echo "<br />"
+				phpinfo()
+				?>
+				</p>
             </div>
         </div>
     </div>
