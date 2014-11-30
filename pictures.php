@@ -77,6 +77,10 @@
             <div class="col-lg-12">
                 <h1>some pix yo</h1>
                 <p>
+				<img src="/media/pictures/IMG_1698.jpg" alt="test yo" />
+
+				<img src="http://www.htmldog.com/images/logo.gif" alt="HTML Dog" />
+
 				
 				<?php
 				$folder = '/media/pictures';
