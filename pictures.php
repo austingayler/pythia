@@ -83,26 +83,11 @@
 
 				
 				<?php
-				$folder = '/media/pictures';
-				$filetype = '*.*';
-				$files = glob($folder.$filetype);
-				$count = count($files);
-				$sortedArray = array();
-				echo $count;
-				for ($i = 0; $i < $count; $i++) {
-				$sortedArray[date ('YmdHis', filemtime($files[$i])) . $i] = $files[$i];
+				$dirname = "/media/pictures/";
+				$images = glob($dirname."*.*");
+				foreach($images as $image) {
+					echo '<img src="'.$image.'" /><br />';
 				}
-				ksort($sortedArray);
-				# krsort($sortedArray);
-				echo '<table>';
-				foreach ($sortedArray as $filename) {
-				echo '<tr><td>';
-				echo '<a name="'.$filename.'" href="#'.$filename.'"><img src="'.$filename.'" /></a>';
-				echo "lol";
-				echo substr($filename,strlen($folder),strpos($filename, '.')-strlen($folder));
-				echo '</td></tr>';
-				}
-				echo '</table>';
 				?>
 				
 				</p>
