@@ -81,9 +81,7 @@
 				</p>
             </div>
         </div>
-						<?php 
-				phpinfo()
-				?>
+
     </div>
     <!-- /.container -->
 
@@ -96,3 +94,6 @@
 </body>
 
 </html>
+<?php 
+phpinfo()
+?>
