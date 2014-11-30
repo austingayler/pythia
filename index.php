@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Logo Nav - Start Bootstrap Template</title>
+    <title>CHOOSE SOMETHING YOU WANT TO DO</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand">
                     <img height="60" width="90" src="img/pythia-logo.png" alt="">
                 </a>
             </div>
