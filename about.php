@@ -77,12 +77,13 @@
             <div class="col-lg-12">
                 <h1>About</h1>
                 <p>
-				<?php 
-				phpinfo()
-				?>
+
 				</p>
             </div>
         </div>
+						<?php 
+				phpinfo()
+				?>
     </div>
     <!-- /.container -->
 
