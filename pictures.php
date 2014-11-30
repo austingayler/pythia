@@ -88,6 +88,7 @@
 				$files = glob($folder.$filetype);
 				$count = count($files);
 				$sortedArray = array();
+				echo $count;
 				for ($i = 0; $i < $count; $i++) {
 				$sortedArray[date ('YmdHis', filemtime($files[$i])) . $i] = $files[$i];
 				}
