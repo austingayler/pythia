@@ -83,7 +83,7 @@
 
 				
 				<?php
-				$dirname = "/media/pictures/";
+				$dirname = "/pictures/";
 				$images = glob($dirname."*.*");
 				foreach($images as $image) {
 					echo '<img src="'.$image.'" /><br />';
