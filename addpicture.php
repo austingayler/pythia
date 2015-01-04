@@ -44,28 +44,7 @@
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.php">Pythia</a>
-                    </li>
-                    <li>
-                        <a href="lr.php">Living Room Audio</a>
-                    </li>
-                    <li>
-                        <a href="radio.php">Radio</a>
-                    </li>
-                    <li>
-                        <a href="camera.php">Camera Stream</a>
-                    </li>
-                    <li>
-                        <a href="pictures.php">Pictures</a>
-                    </li>
-                    <li>
-                        <a href="about.php">About</a>
-                    </li>
-                </ul>
-            </div>
+				<?php include 'navbar.html' ?>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -75,21 +54,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1>some pix yo</h1>
+                <h1>Enter the URLs, separated by line breaks</h1>
                 <p>
-				<img src="/media/pictures/IMG_1698.jpg" alt="test yo" />
-
-				<img src="http://www.htmldog.com/images/logo.gif" alt="HTML Dog" />
-
-				
-				<?php
-				$dirname = "pictures/";
-				$images = glob($dirname."*.*");
-				foreach($images as $image) {
-					echo '<img src="'.$image.'" /><br />';
-				}
-				?>
-				
+					<form action="input_url.php" method="post">
+						<textarea rows="10" cols="50" name="url_box"></textarea>
+						<br/>
+						<input type="submit" name="Submit">
+					</form>
 				</p>
             </div>
         </div>
