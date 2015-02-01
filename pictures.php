@@ -54,18 +54,18 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1>some pix yo<sup><sup><a href="addpicture.php">add</a></sup></sup></h1>
+                <h1>some quotes yo<sup><sup><a href="addpicture.php">add</a></sup></sup></h1>
                 <p>
 				
 				<?php
 				
-				include 'connect.php';
+				include 'connect.php';	# page was originally meant for pictures, but I decided to make it display quotes instead
 				
 				$query = "SELECT * FROM pictures";
 				$result = mysqli_query($conn, $query) or die(mysql_error() . "frick");
 				
 				while($row = mysqli_fetch_assoc($result)) {
-					echo '<p style=\"width:600px;\"/>' . $row["url"] . '</p><br />';
+					echo '<p style=\"width:600px;\"/>' . $row["url"] . '</p><br />';	#echo each quote in a new <p>
 				}
 				mysqli_free_result($result);
 				mysqli_close($conn);

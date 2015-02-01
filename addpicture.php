@@ -54,7 +54,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1>Enter the URLs, separated by line breaks</h1>
+                <h1>Enter the URLs/quotes, separated by line breaks</h1>
                 <p>
 					<form action="input_url.php" method="post">
 						<textarea rows="10" cols="50" name="url_box"></textarea>
